@@ -1,0 +1,16 @@
+{
+	"name": "VuePress",
+	"version": "1.0.0",
+	"description": "Vue 驱动的静态网站生成器",
+	"author": "fcd",
+	"license": "MIT",
+	"scripts": {
+		"dev": "vuepress dev docs",
+		"build": "vuepress build docs",
+		"gh": "bash deploy.sh"
+	},
+	"devDependencies": {
+		"v-dialogs": "^2.1.4",
+		"vuepress": "^1.8.0"
+	}
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>拖拽DOM例子 | 测试例子 VuePress</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/favicon-lehua.ico">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.bc67508e.css" as="style"><link rel="preload" href="/assets/js/app.75921c93.js" as="script"><link rel="preload" href="/assets/js/2.c1c9d154.js" as="script"><link rel="preload" href="/assets/js/20.0dfae628.js" as="script"><link rel="prefetch" href="/assets/js/10.6cdab146.js"><link rel="prefetch" href="/assets/js/11.7d31a478.js"><link rel="prefetch" href="/assets/js/12.581a9899.js"><link rel="prefetch" href="/assets/js/13.89d85204.js"><link rel="prefetch" href="/assets/js/14.7fcfaf1e.js"><link rel="prefetch" href="/assets/js/15.a7601484.js"><link rel="prefetch" href="/assets/js/16.0ce6e459.js"><link rel="prefetch" href="/assets/js/17.a3bffece.js"><link rel="prefetch" href="/assets/js/18.68a09140.js"><link rel="prefetch" href="/assets/js/19.18717002.js"><link rel="prefetch" href="/assets/js/21.e2ec651d.js"><link rel="prefetch" href="/assets/js/3.61487a67.js"><link rel="prefetch" href="/assets/js/4.2edd81d7.js"><link rel="prefetch" href="/assets/js/5.9d54fb31.js"><link rel="prefetch" href="/assets/js/6.7305f4c5.js"><link rel="prefetch" href="/assets/js/7.f87a730d.js"><link rel="prefetch" href="/assets/js/8.fa382f2b.js"><link rel="prefetch" href="/assets/js/9.66e131db.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bc67508e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">测试例子 VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow down"></span></button> <button type="button" aria-label="文章" class="mobile-dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/base/systems/" class="nav-link">
+  系统基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          技术文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/java/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link router-link-active">
+  WEB
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="http://www.hczhiyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  华彩智云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.zhihu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow down"></span></button> <button type="button" aria-label="文章" class="mobile-dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/base/systems/" class="nav-link">
+  系统基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          技术文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/java/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link router-link-active">
+  WEB
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="http://www.hczhiyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  华彩智云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.zhihu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>测试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JS基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/web/JS基础/code-push常用命令.html" class="sidebar-link">codePush常用命令</a></li><li><a href="/skill/web/JS基础/斐波那契数列.html" class="sidebar-link">一、什么是斐波那契数列</a></li><li><a href="/skill/web/JS基础/触底功能.html" class="sidebar-link">触底事件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/web/Vue基础/VUE基础.html" class="sidebar-link">VUE相关</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/web/组件/拖拽DOM.html" class="active sidebar-link">拖拽DOM例子</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="拖拽dom例子"><a href="#拖拽dom例子" class="header-anchor">#</a> 拖拽DOM例子</h1> <div class="language- extra-class"><pre class="language-text"><code> fab() {
+    var div1: any = document.querySelector('#fab');
+    //限制最大宽高，不让滑块出去
+    var maxW = document.body.clientWidth - div1.offsetWidth;
+    var maxH = document.body.clientHeight - div1.offsetHeight;
+    var oL, oT
+    //手指触摸开始，记录div的初始位置
+    div1.addEventListener('touchstart', function (e) {
+      var ev = e || window.event;
+      var touch = ev.targetTouches[0];
+      oL = touch.clientX - div1.offsetLeft;
+      oT = touch.clientY - div1.offsetTop;
+      document.addEventListener(&quot;touchmove&quot;, defaultEvent, false);
+    });
+    //触摸中的，位置记录
+    div1.addEventListener('touchmove', function (e) {
+      var ev = e || window.event;
+      var touch = ev.targetTouches[0];
+      var oLeft = touch.clientX - oL;
+      var oTop = touch.clientY - oT;
+      if (oLeft &lt; 0) {
+        oLeft = 0;
+      } else if (oLeft &gt;= maxW - 56) {
+        oLeft = maxW - 56;
+      }
+      if (oTop &lt; 0) {
+        oTop = 0;
+      } else if (oTop &gt;= maxH) {
+        oTop = maxH;
+      }
+      div1.style.left = oLeft + 'px';
+      div1.style.top = oTop + 'px';
+    });
+    //触摸结束时的处理
+    div1.addEventListener('touchend', function () {
+      document.removeEventListener(&quot;touchmove&quot;, defaultEvent);
+    });
+    //阻止默认事件
+    function defaultEvent(e) {
+      e.preventDefault();
+    }
+    // pc端
+    // box1.onmousedown = function () {
+    //   /*为document绑定一个onmousemove事件
+    //    为什么要为document绑定事件而不是box1绑定呢？
+    //              给box1绑定上则只有鼠标在box1上才会有效，此时只能随着鼠标往下移，很局限
+    // */
+    //   document.onmousemove = function (e: any) {
+    //     console.log(&quot;触发了鼠标移动事件事件&quot;);
+    //     var evt = e || event;
+    //     console.log(e);
+    //     //获取鼠标的位置
+    //     //var left = evt.clientX;
+    //     //var top = evt.clientY;
+    //     //console.log(left,top);
+    //     /*修改移动的元素的位置            
+    //      注意：要修改元素的top，left值必须给它设置定位，否则无效*/
+    //     box1.style.left = evt.clientX + &quot;px&quot;;
+    //     box1.style.top = evt.clientY + &quot;px&quot;;
+    //     console.log(&quot;box1的位置为：&quot; + box1.style.left + &quot;,&quot; + box1.style.top);
+    //   };
+    //   //为元素绑定一个鼠标松开事件：当松开时，元素固定在当前位置（取消document的onmousemove事件）
+    //   box1.onmouseup = function () {
+    //     document.onmousemove = null;
+    //   };
+
+    // };
+  }
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/skill/web/Vue基础/VUE基础.html" class="prev">
+        VUE相关
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.75921c93.js" defer></script><script src="/assets/js/2.c1c9d154.js" defer></script><script src="/assets/js/20.0dfae628.js" defer></script>
+  </body>
+</html>

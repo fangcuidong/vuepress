@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>触底事件 | 测试例子 VuePress</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/favicon-lehua.ico">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.bc67508e.css" as="style"><link rel="preload" href="/assets/js/app.75921c93.js" as="script"><link rel="preload" href="/assets/js/2.c1c9d154.js" as="script"><link rel="preload" href="/assets/js/17.a3bffece.js" as="script"><link rel="prefetch" href="/assets/js/10.6cdab146.js"><link rel="prefetch" href="/assets/js/11.7d31a478.js"><link rel="prefetch" href="/assets/js/12.581a9899.js"><link rel="prefetch" href="/assets/js/13.89d85204.js"><link rel="prefetch" href="/assets/js/14.7fcfaf1e.js"><link rel="prefetch" href="/assets/js/15.a7601484.js"><link rel="prefetch" href="/assets/js/16.0ce6e459.js"><link rel="prefetch" href="/assets/js/18.68a09140.js"><link rel="prefetch" href="/assets/js/19.18717002.js"><link rel="prefetch" href="/assets/js/20.0dfae628.js"><link rel="prefetch" href="/assets/js/21.e2ec651d.js"><link rel="prefetch" href="/assets/js/3.61487a67.js"><link rel="prefetch" href="/assets/js/4.2edd81d7.js"><link rel="prefetch" href="/assets/js/5.9d54fb31.js"><link rel="prefetch" href="/assets/js/6.7305f4c5.js"><link rel="prefetch" href="/assets/js/7.f87a730d.js"><link rel="prefetch" href="/assets/js/8.fa382f2b.js"><link rel="prefetch" href="/assets/js/9.66e131db.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bc67508e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">测试例子 VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow down"></span></button> <button type="button" aria-label="文章" class="mobile-dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/base/systems/" class="nav-link">
+  系统基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          技术文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/java/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link router-link-active">
+  WEB
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="http://www.hczhiyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  华彩智云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.zhihu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow down"></span></button> <button type="button" aria-label="文章" class="mobile-dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/base/systems/" class="nav-link">
+  系统基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          技术文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/skill/java/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-subitem"><a href="/skill/web/" class="nav-link router-link-active">
+  WEB
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="http://www.hczhiyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  华彩智云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.zhihu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>测试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JS基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/web/JS基础/code-push常用命令.html" class="sidebar-link">codePush常用命令</a></li><li><a href="/skill/web/JS基础/斐波那契数列.html" class="sidebar-link">一、什么是斐波那契数列</a></li><li><a href="/skill/web/JS基础/触底功能.html" class="active sidebar-link">触底事件</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/web/Vue基础/VUE基础.html" class="sidebar-link">VUE相关</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/skill/web/组件/拖拽DOM.html" class="sidebar-link">拖拽DOM例子</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="触底事件"><a href="#触底事件" class="header-anchor">#</a> 触底事件</h3> <h4 id="实现思路"><a href="#实现思路" class="header-anchor">#</a> 实现思路</h4> <p>样式方面不多赘述，滚动区域是给固定高度，设置 overflow-y: auto 来实现。</p> <p>接下来看看js方面的实现，其实也很简单，触发的条件是： 可视高度 + 滚动距离 &gt;= 实际高度 。例子我会使用vue来实现，和原生实现是一样的。</p> <ul><li>可视高度(offsetHeight)：通过 dom 的 offsetHeight 获得，表示区域固定的高度。这里我推荐通过 getBoundingClientRect() 来获取高度，因为使用前者会引起浏览器回流，造成一些性能问题。</li> <li>滚动高度(scrollTop)：滚动事件中通过 e.target.scrollTop 获取，表示滚动条距离顶部的px</li> <li>实际高度(scrollHeight)：通过 dom 的 scrollHeight 获得，表示区域内所有内容的高度（包括滚动距离），也就是实际高度</li></ul> <h4 id="基础实现"><a href="#基础实现" class="header-anchor">#</a> 基础实现</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">onScroll</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> scrollTop <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>scrollTop
+    <span class="token keyword">let</span> scrollHeight <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>scrollHeight
+    <span class="token keyword">let</span> offsetHeight <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>height<span class="token punctuation">)</span>
+    <span class="token keyword">let</span> currentHeight <span class="token operator">=</span> scrollTop <span class="token operator">+</span> offsetHeight
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>currentHeight <span class="token operator">&gt;=</span> scrollHeight<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'触底'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="加点细节"><a href="#加点细节" class="header-anchor">#</a> 加点细节</h4> <p>加点细节，现在我们希望是离底部一定距离就触发事件，而不是等到完全触底。如果你做过小程序，这和onReachBottom差不多的意思。</p> <p>声明一个离底部的距离变量reachBottomDistance</p> <p>这时候触发条件：可视高度 + 滚动距离 + reachBottomDistance &gt;= 实际高度</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      reachBottomDistance<span class="token operator">:</span> <span class="token number">100</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">onScroll</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> scrollTop <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>scrollTop
+        <span class="token keyword">let</span> scrollHeight <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>scrollHeight
+        <span class="token keyword">let</span> offsetHeight <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>height<span class="token punctuation">)</span>
+        <span class="token keyword">let</span> currentHeight <span class="token operator">=</span> scrollTop <span class="token operator">+</span> offsetHeight <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>reachBottomDistance
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>currentHeight <span class="token operator">&gt;=</span> scrollHeight<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'触底'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="优化"><a href="#优化" class="header-anchor">#</a> 优化</h4> <p>实时去获取位置信息稍微会损耗性能，我们应该把不变的缓存起来，只实时获取可变的部分</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      isReachBottom<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      reachBottomDistance<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+      scrollHeight<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      offsetHeight<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 页面加载完成后  将高度存储起来</span>
+    <span class="token keyword">let</span> dom <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.comment-area .comment-list'</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>scrollHeight <span class="token operator">=</span> dom<span class="token punctuation">.</span>scrollHeight
+    <span class="token keyword">this</span><span class="token punctuation">.</span>offsetHeight <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>dom<span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>height<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">onScroll</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> scrollTop <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>scrollTop
+        <span class="token keyword">let</span> currentHeight <span class="token operator">=</span> scrollTop <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>offsetHeight <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>reachBottomDistance
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>currentHeight <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>scrollHeight <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>isReachBottom<span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>isReachBottom <span class="token operator">=</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>isReachBottom<span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">return</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>currentHeight <span class="token operator">&gt;=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>scrollHeight<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>isReachBottom <span class="token operator">=</span> <span class="token boolean">true</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'触底'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/skill/web/JS基础/斐波那契数列.html" class="prev">
+        一、什么是斐波那契数列
+      </a></span> <span class="next"><a href="/skill/web/Vue基础/VUE基础.html">
+        VUE相关
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.75921c93.js" defer></script><script src="/assets/js/2.c1c9d154.js" defer></script><script src="/assets/js/17.a3bffece.js" defer></script>
+  </body>
+</html>
